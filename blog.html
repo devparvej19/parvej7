@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <title>Blog</title>
+</head>
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white" id="btn-home">
+                Home
+            </button>
+        </nav>
+    </header>
+
+    <!-- Question Answer Section Start -->
+    <main>
+        <div class="mt-5 lg:px-12">
+            <h2 class="text-3xl">
+                1. Difference between map, foreach, filter, find?</h2>
+            <p class="text-xl">
+                Ans. The forEach method returns undefined.
+                <br>map returns a new array with the transformed elements.
+                <br>filter returns an array containing the element that fulfill the condition.
+                <br> find returns the element itself that fulfill the condition.
+            </p>
+        </div>
+
+        <div class="mt-5 lg:px-12">
+            <h2 class="text-3xl">
+                2. Difference between local storage, session storage, cookies?</h2>
+            <p class="text-xl">
+                Ans. Local storage is useful for storing data that user will need to access later.
+                <br>Session storage is a great way to improve the performance of web applications.
+                <br>Cookies are a good choice for storing data that should not be persisted for a long time.
+            </p>
+        </div>
+
+        <div class="mt-5 lg:px-12">
+            <h2 class="text-3xl">
+                3. What is event loop? and what is the purpose of event loop?</h2>
+            <p class="text-xl">
+                Ans. The event loop is a constantly running process that monitors both the callback queue and the call
+                stack.
+                <br>If the call stack is not empty, the event loop waits until it is empty and places the next function
+                from the callback queue to the call stack.
+                <br>This event loop is using for executing the code, collecting and processing events
+            </p>
+        </div>
+
+        <div class="mt-5 lg:px-12">
+            <h2 class="text-3xl">
+                4. what is the purpose of "quizTimer" function?</h2>
+            <p class="text-xl">
+                Ans. "quizTimer" function is used here to count and display the total timing of giving all answers.
+            </p>
+        </div>
+
+        <div class="mt-5 lg:px-12">
+            <h2 class="text-3xl">
+                5. What is the purpose of "chooseAnswer" function?</h2>
+            <p class="text-xl">
+                Ans. "chooseAnswer" function is used here to select and display the selected answer among four options
+                of all questions.
+            </p>
+        </div>
+    </main>
+    <!-- Question Answer Section End -->
+
+    <!-- index file location added here -->
+    <script>
+        document.getElementById('btn-home').addEventListener('click', function () {
+            location.href = 'index.html'
+        })
+    </script>
+</body>
+
+</html>
